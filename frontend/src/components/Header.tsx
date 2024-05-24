@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import MainNav from "./MainNav";
 import MobileNav from "./mobileNav";
 
-const Header = () =>  {
+const Header = () => {
 
-    return(
+    return (
         <div className="border-b-2 voreder-b-orange-500 py-6">
             <div className="container mx-auto flex justify-between items-center">
                 <Link
@@ -14,6 +15,9 @@ const Header = () =>  {
                 </Link>
                 <div className="md:hidden">
                     <MobileNav />
+                </div>
+                <div className="hidden md:block">
+                    <MainNav />
                 </div>
             </div>
         </div>
