@@ -16,5 +16,5 @@ app.get('/test', async (req: Request, res: Response) => {
 });
 
 app.listen(7000, () => {
-    console.log('Server is running on port localhost:7000');
+    console.log(`Server is running on port localhost:7000`);
 });
